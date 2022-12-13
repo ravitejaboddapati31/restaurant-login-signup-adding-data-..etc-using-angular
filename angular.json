@@ -88,9 +88,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+                
+            ]
           }
         },
         "lint": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ravirestro"
+    }
+  },
+  "defaultProject": "ravirestro",
+  "cli": {
+    "analytics": "b21868d6-6b45-4943-a8dd-bfa636bcf418"
+  }
 }

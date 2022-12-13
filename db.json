@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "ravi teja chowdary",
+      "email": "raviteja1@gmail.com",
+      "mobile": 976857463,
+      "address": "hkigufydtgsfdgfhgjh",
+      "services": "higufydfghjlhkgj"
+    },
+    {
+      "id": 2,
+      "name": null,
+      "email": null,
+      "mobile": null,
+      "address": null,
+      "services": null
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

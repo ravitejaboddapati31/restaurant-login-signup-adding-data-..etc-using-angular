@@ -1,0 +1,20 @@
+.card{
+    margin-top: 16px;
+    border:1px solid red;
+    width:600px;
+    padding: 30px;
+    position:absolute;
+    top:10%;
+    left:29%;
+
+}
+.one{
+    color:blue;
+    height:10px;
+    background-color: black;
+}
+a{
+    color:red;
+    cursor: pointer;
+    font-weight: bold; 
+}

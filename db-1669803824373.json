@@ -1,0 +1,30 @@
+{
+  "posts": [],
+  "signup": [
+    {
+      "name": "raviteja",
+      "mobile": 987654,
+      "email": "raviteja123@gmail.com",
+      "password": "Ravi123",
+      "id": 1
+    },
+    {
+      "name": "sandeep",
+      "mobile": 57463545767,
+      "email": "sandeep123@gmail.com",
+      "password": "san123",
+      "id": 2
+    },
+    {
+      "name": "raviteja",
+      "mobile": 99676898,
+      "email": "tejab123@gmail.com",
+      "password": "Ravi123",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

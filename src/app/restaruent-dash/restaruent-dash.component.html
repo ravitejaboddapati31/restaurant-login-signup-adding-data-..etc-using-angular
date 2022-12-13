@@ -1,0 +1,86 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class ="container-fluid">
+        <h2 class="text-warning">
+            Restuarnt Record
+        </h2>
+        <div class="d-flex">
+            <button type="button" (click)="clickAddResto()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add restuarant</button>
+  
+        </div>
+    </div>
+  
+  </nav>
+  <br/>
+  <br/>
+  <!--table-->
+  <table class ="table text-center">
+    <thead>
+  <th scope ="col">Restro id</th>
+  <th scope ="col">Name</th>
+  <th scope ="col">Email</th>
+  <th scope ="col">Mobile</th>
+  <th scope ="col">Address</th>
+  <th scope ="col">services</th>
+  <th scope ="col">action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let data of allRestarantData">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.mobile}}</td>
+            <td>{{data.address}}</td>
+            <td>{{data.services}}</td>
+            <td>
+                <button type ="button" class=" btn btn-primary" (click)="onEditResto(data)" data-bs-toggle="modal" data-bs-target="#exampleModal">edit</button>&nbsp;
+                <button class=" btn btn-danger" (click)="deleteResto(data)">delete</button>
+  
+  
+            </td>
+        </tr>
+  
+    </tbody>
+  </table>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">restaurent record form</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label  class="form-label">Name</label>
+              <input type="text" formControlName="name" class="form-control" placeholder="enter a name" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">email id</label>
+              <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">mobile</label>
+              <input type="number" formControlName="mobile" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">address</label>
+              <input type="text" formControlName="address" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">services</label>
+              <input type="text" formControlName="services" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button *ngIf="showAdd" type="button" class="btn btn-primary" (click)="addResto()">add details</button>
+          <button *ngIf="showbtn" type="button" class="btn btn-primary" (click)="updateResto()">update restuarant</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   
